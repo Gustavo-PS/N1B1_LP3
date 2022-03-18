@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="getUrlVars()">
+    
+    <img src="" id="imgReport" width='458' height='930'>
+    
+    <script>
+        function getUrlVars() {
+            debugger;
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            var req = new XMLHttpRequest();
+            var urlRequest = "https://imdb-api.com/pt/API/Report/k_ph2u1n00/" + vars.id;
+            document.getElementById('imgReport').src = urlRequest;
+        }
+    </script>
+</body>
+
+</html>
