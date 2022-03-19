@@ -2,7 +2,7 @@
 <widget id="io.cordova.hellocordova" version="1.0.0">
     <name>NOME DO APP</name>
     <description>DESCRIÇÃO DO APP</description>
-    <content src="pgMovie.html" />
+    <content src="home.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
 </widget>
