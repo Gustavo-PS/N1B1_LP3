@@ -6,15 +6,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/memes.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Baloo';
+        }
+        input{
+            font-family: 'Baloo'; font-size: large;
+        }
+    </style>
     <title>MEME</title>
 </head>
 
 <body>
-    <label>Palavra chave: </label><input type="text" id="title">
+    <div>
+        <a href='pgMenu.html'><img class="menu" src='img/memesBack.png'/></a>
+    </div>
 
-    <button id="btnPesquisa" onclick=pesquisaMeme()>Gerar meme</button> </br></br>
+    <img class="meme" src="" id="imgMeme">
 
-    <img src="" id="imgMeme">
+    <input class ="keyword" type="text" id="title" placeholder="keyword">
+
+    <div id="btnPesquisa" onclick=pesquisaMeme()>
+        <h1>GO!</h1>
+    </div>
 </body>
 
 </html>

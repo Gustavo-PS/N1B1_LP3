@@ -1,0 +1,57 @@
+html{
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+    width: 90%;
+    padding-top:7%;
+    padding-bottom:7%;
+    padding-left: 3%;
+    padding-right: 7%;
+}
+
+.meme{
+    width: 80%;
+    height: 40%;
+    padding: 10%;
+    padding-top: 20%;
+}
+
+.keyword{
+    background: #FFFFFF;
+    border: 3px solid #76BAF9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 60%;
+    height: 5%;
+    margin-left: 20%;
+    margin-right: 20%
+}
+
+#btnPesquisa{
+    background: #76BAF9;
+    border-radius: 30px;
+    color: white;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+h1{
+    padding-left: 30%;
+    width: 40%;
+    padding-right: 30%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+
+}

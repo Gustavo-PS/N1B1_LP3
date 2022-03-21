@@ -1,5 +1,4 @@
 function pesquisaLetraMusica() {
-    debugger;
     var nomeMusica = document.getElementById('title').value;
     var nomeArtista = document.getElementById('artist').value;
 
