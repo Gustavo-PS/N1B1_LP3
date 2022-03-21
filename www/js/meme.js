@@ -1,5 +1,4 @@
 function pesquisaMeme() {
-    debugger
     document.getElementById("imgMeme").src = "";
 
     if (document.getElementById('title').value != "") {
