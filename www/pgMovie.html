@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filmes</title>
+    <title>MOVIES</title>
 
 </head>
 
@@ -18,28 +18,34 @@
     <div id="resultadoPesquisa"></div>
 
     <script type="text/javascript" scr="movie.js">
+
         function pesquisaTitulo() {
             debugger;
-            var nome = document.getElementById('title').value;
-            var req = new XMLHttpRequest();
-            req.open("get", "https://imdb-api.com/en/API/Search/k_ph2u1n00/" + nome, false);
-            req.send();
-            var result = req.responseText;
-            var resultArray = JSON.parse(result);
-            var divListagem = document.getElementById('resultadoPesquisa');
+            if (document.getElementById('title').value != "") {
+                var nome = document.getElementById('title').value;
+                var req = new XMLHttpRequest();
+                req.open("get", "https://imdb-api.com/en/API/Search/k_ph2u1n00/" + nome, false);
+                req.send();
+                var result = req.responseText;
+                var resultArray = JSON.parse(result);
+                var divListagem = document.getElementById('resultadoPesquisa');
 
-            if (resultArray.results != null) {
-                divListagem.innerHTML = "";
-                divListagem.innerHTML += "<ul id='listaResultado'>";
-                for (var i = 0; i < resultArray.results.length; i++) {
-                    divListagem.innerHTML += "<li> Título: " + resultArray.results[i].title + " " + resultArray.results[i].description +
-                        "</br><img src=" + resultArray.results[i].image + "width='150' height='180'>" +
-                        "</br><a href='pgReportMovie.html?id=" + resultArray.results[i].id + "'>Saiba mais!</a>" + "</li>\n </br></br>";
+                if (resultArray.results != null) {
+                    divListagem.innerHTML = "";
+                    divListagem.innerHTML += "<ul id='listaResultado'>";
+                    for (var i = 0; i < resultArray.results.length; i++) {
+                        divListagem.innerHTML += "<li> Título: " + resultArray.results[i].title + " " + resultArray.results[i].description +
+                            "</br><img src=" + resultArray.results[i].image + "width='150' height='180'>" +
+                            "</br><a href='pgReportMovie.html?id=" + resultArray.results[i].id + "'>Saiba mais!</a>" + "</li>\n </br></br>";
+                    }
+                    divListagem.innerHTML += "</ul>";
                 }
-                divListagem.innerHTML += "</ul>";
+                else
+                    alert("Nenhum resultado encontrado");
 
-            }
-            document.getElementById('title').value = "";
+                document.getElementById('title').value = "";
+            } else
+                alert("Preencha o campo de pesquisa");
         }
     </script>
 </body>
