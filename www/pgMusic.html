@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <input type="text" id="title">
+   <label>Nome da Música: </label> <input type="text" id="title">
 </body></br>
-<input type="text" id="artist">
+<label>Nome do artista/banda: </label><input type="text" id="artist">
 
 </html></br>
 <button id="btnPesquisa" onclick=pesquisaLetraMusica()>Pesquisar</button>
@@ -35,7 +35,9 @@
 
             if (resultArray.type != "notfound") {
 
-                req.open("get", "https://www.vagalume.com.br/" + resultArray.art.name.replace(/ /g, "-").toLowerCase() + "/index.js", false);
+                var artistName = resultArray.art.name.replace(/ /g, "-").toLowerCase()
+                artistName = artistName.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                req.open("get", "https://www.vagalume.com.br/" + artistName + "/index.js", false);
                 req.send();
                 var result = req.responseText;
                 var resultArtistArray = JSON.parse(result);

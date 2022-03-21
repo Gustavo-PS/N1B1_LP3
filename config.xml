@@ -2,7 +2,7 @@
 <widget id="io.cordova.hellocordova" version="1.0.0">
     <name>FUN TIME </name>
     <description>DESCRIÇÃO DO APP</description>
-    <content src="home.html" />
+    <content src="pgHome.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
     <platform name="android">
