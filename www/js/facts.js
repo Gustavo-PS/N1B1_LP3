@@ -1,5 +1,4 @@
 function pesquisaFact() {
-    debugger;
     var maior = true;
     document.getElementById("lblFact").src = "";
     var req = new XMLHttpRequest();

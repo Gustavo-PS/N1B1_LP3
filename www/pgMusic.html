@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/memes.css">
+    <link rel="stylesheet" href="css/music.css">
     <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
     <style>
         body {
@@ -20,12 +20,17 @@
     <div>
         <a href='pgMenu.html'><img class="menu" src='img/musicBack.png'/></a>
     </div>
-   <label>Nome da Música: </label> <input type="text" id="title" required>
+    <div class = "params">
+        <label>Nome da Música: </label> <input type="text" id="title" required>
+        <label>Nome do artista/banda: </label><input type="text" id="artist" required>
+    </div>
 </body></br>
-<label>Nome do artista/banda: </label><input type="text" id="artist" required>
+
 
 </html></br>
-<button id="btnPesquisa" onclick=pesquisaLetraMusica()>Pesquisar</button>
+<div id="btnPesquisa" onclick=pesquisaLetraMusica()>
+    <h1>GO!</h1>
+</div>
 
 <div id="resultadoPesquisa"></div>
 </body>
