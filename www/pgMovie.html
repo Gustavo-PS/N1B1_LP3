@@ -5,18 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/movie.css">
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <style>
+        body {
+            font-family: 'Baloo';
+        }
+        input{
+            font-family: 'Baloo'; font-size: large;
+        }
+    </style>
     <title>MOVIES</title>
 
 </head>
 
 <body>
+    <div>
+        <a href='pgMenu.html'><img class="menu" src='img/movieBack.png'/></a>
+    </div>
 
-    <input type="text" id="title" required>
+    <div class = "params">
+        <input type="text" id="title" required>
+    </div>
 
-    <button id="btnPesquisa" onclick=pesquisaTitulo()>Pesquisar</button>
-
+<div id="btnPesquisa" onclick=pesquisaTitulo()>
+    <h1>GO!</h1>
+</div>
+<div class = "infos"></div>
     <div id="resultadoPesquisa">
         <img id="loading" src="img/load.gif" hidden="true">
+    </div>
+    
+    <div id="btnPesquisa" onclick=pesquisaTitulo()>
+        <h1>GO!</h1>
+    </div>
+    
+    <div class = "infos">
+        <div id="resultadoPesquisa"></div>
     </div>
 
 </body>

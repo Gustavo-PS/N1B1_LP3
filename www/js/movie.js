@@ -15,8 +15,8 @@ function pesquisaTitulo() {
             innerHTML += "<ul id='listaResultado'>";
             for (var i = 0; i < resultArray.results.length; i++) {
                 innerHTML += "<li> Título: " + resultArray.results[i].title + " " + resultArray.results[i].description +
-                    "</br><img src=" + resultArray.results[i].image + "width='150' height='180'>" +
-                    "</br><a href='pgReportMovie.html?id=" + resultArray.results[i].id + "'>Saiba mais!</a>" + "</li>\n </br></br>";
+                    "</br>" + "<a id='saibaMais' href='pgReportMovie.html?id=" + resultArray.results[i].id + "'><img src=" + resultArray.results[i].image + "width='150' height='180'></a>" + 
+                    "</li>\n </br></br> </img>";
             }
             document.getElementById("loading").hidden = true;
             divListagem.innerHTML += innerHTML;
