@@ -1,5 +1,6 @@
 function pesquisaMeme() {
-    document.getElementById("imgMeme").src = "";
+    debugger;
+    document.getElementById("imgMeme").src = "img/load.gif";
 
     if (document.getElementById('title').value != "") {
         var txtPesquisa = document.getElementById('title').value;
