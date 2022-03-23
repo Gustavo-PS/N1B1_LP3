@@ -8,17 +8,27 @@ body {
     background-color: #76BAF9;
 }
 
+.title{
+    font-size: 32px;
+    color: #fff;
+    padding-top:10%;
+    padding-left: 15%;
+    padding-right: 15%;
+    text-align: center;
+    text-decoration: none;
+}
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
 .menuHead{
-    margin-top: 50%;
+    margin-top: 1.5%;
     background-color: white;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
-    padding-top: 12%;
+    padding-top: 2%;
 }
 
 .menuContainer{

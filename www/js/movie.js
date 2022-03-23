@@ -1,5 +1,5 @@
 function pesquisaTitulo() {
-    debugger;
+    
     if (document.getElementById('title').value != "") {
         var nome = document.getElementById('title').value;
         var req = new XMLHttpRequest();
@@ -14,8 +14,9 @@ function pesquisaTitulo() {
             divListagem.innerHTML += "<ul id='listaResultado'>";
             for (var i = 0; i < resultArray.results.length; i++) {
                 divListagem.innerHTML += "<li> Título: " + resultArray.results[i].title + " " + resultArray.results[i].description +
-                    "</br><img src=" + resultArray.results[i].image + "width='150' height='180'>" +
-                    "</br><a href='pgReportMovie.html?id=" + resultArray.results[i].id + "'>Saiba mais!</a>" + "</li>\n </br></br>";
+                    "</br>" +
+                    "<a id='saibaMais' href='pgReportMovie.html?id=" + resultArray.results[i].id + "'><img src=" + resultArray.results[i].image + "width='150' height='180'></a>" + 
+                    "</li>\n </br></br> </img>";
             }
             divListagem.innerHTML += "</ul>";
         }
@@ -28,7 +29,7 @@ function pesquisaTitulo() {
 }
 
 function getUrlVars() {
-    debugger;
+    
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
         vars[key] = value;
