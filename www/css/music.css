@@ -18,18 +18,26 @@ html, body {
 .menu{
     width: 80%;
     padding-top:8%;
-    padding-bottom:16%;
     padding-left: 10%;
     padding-right: 10%;
 }
 
 .params{
-    padding-left: 30%;
-    width: 40%;
-    padding-right: 30%;
+    padding-left: 15%;
+    width: 70%;
+    padding-right: 15%;
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
+
+}
+
+.keyword{
+    background: #FFFFFF;
+    border: 3px solid #76BAF9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 85%;
+    height: 5%;
+    margin-top: 5%;
 }
 
 #btnPesquisa{
@@ -46,7 +54,10 @@ h1{
     width: 40%;
     padding-right: 30%;
     text-align: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
 
+.infos{
+    margin: 15%;
 }

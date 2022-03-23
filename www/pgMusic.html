@@ -12,6 +12,9 @@
         body {
             font-family: 'Baloo';
         }
+        input{
+            font-family: 'Baloo'; font-size: large;
+        }
     </style>
     <title>MUSICA</title>
 </head>
@@ -21,18 +24,18 @@
         <a href='pgMenu.html'><img class="menu" src='img/musicBack.png'/></a>
     </div>
     <div class = "params">
-        <label>Nome da Música: </label> <input type="text" id="title" required>
-        <label>Nome do artista/banda: </label><input type="text" id="artist" required>
+        <input class="keyword" type="text" id="title" required placeholder="Música">
+        <input class="keyword" type="text" id="artist" required placeholder="Artista/Banda">
     </div>
-</body></br>
 
 
-</html></br>
-<div id="btnPesquisa" onclick=pesquisaLetraMusica()>
-    <h1>GO!</h1>
-</div>
+    <div id="btnPesquisa" onclick=pesquisaLetraMusica()>
+        <h1>GO!</h1>
+    </div>
 
-<div id="resultadoPesquisa"></div>
+    <div class = "infos">
+        <div id="resultadoPesquisa"></div>
+    </div>
 </body>
 
 </html>
