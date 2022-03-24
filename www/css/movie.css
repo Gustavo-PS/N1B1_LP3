@@ -58,6 +58,16 @@ h1{
     padding-bottom: 2%;
 }
 
+#resultadoPesquisa{
+    width: 100%;
+}
+
+#loading{
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
 .infos{
     margin: 15%;
 }
